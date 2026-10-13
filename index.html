@@ -8,6 +8,127 @@
         </head>
         <body>
              <a-scene> 
+              <a-box
+                material= "src: #wall;
+                 repeat: 1 1;
+                  ambientOcclusionMap: #wall-ambient-occlusion;
+                   ambientOcclusionTextureRepeat: 1 1; 
+                   normalMap: #wall-normal;
+                    normalTextureRepeat: 1 1"
+                position="-5 4 -8"
+                rotation="0 0 0"
+                width="6"
+                height="6"
+                depth="6"
+                >
+            </a-box>
+            <a-cone
+            material= "src: #tiles;
+                 repeat: 0.3 0.3;
+                  ambientOcclusionMap: #tiles-ambient-occlusion;
+                   ambientOcclusionTextureRepeat: 0.3 0.3; 
+                   normalMap: #wall-tiles;
+                    normalTextureRepeat: 0.3 0.3"
+            position="-5.2 8.5 -7.5"
+            rotation="0 0 0"
+            radius-bottom="4.5"
+            height="3"
+            >
+        </a-cone>
+<a-cone
+color="red"
+position="-6.2 1.25 -4"
+rotation="0 0 0"
+radius-bottom="0.7"
+height="2.5"
+>
+</a-cone>
+<a-cone
+color="orange"
+position="-5 1.75 -4"
+rotation="0 0 0"
+radius-bottom="0.8"
+height="3.5"
+>
+</a-cone>
+<a-cone
+color="yellow"
+position="-3.8 1.1 -4"
+rotation="0 0 0"
+radius-bottom="0.6"
+height="2.2"
+>
+</a-cone>
+<a-cone
+color="orange"
+position="-7.5 0.9 -4.5"
+rotation="0 0 0"
+radius-bottom="0.55"
+height="1.8"
+>
+</a-cone>
+<a-cone
+color="red"
+position="-6.8 1.4 -3.6"
+rotation="0 0 0"
+radius-bottom="0.75"
+height="2.8"
+>
+</a-cone>
+<a-cone
+color="yellow"
+position="-2.6 1.0 -4.4"
+rotation="0 0 0"
+radius-bottom="0.45"
+height="1.5"
+>
+</a-cone>
+<a-cone
+color="red"
+position="-2.6 1.0 -4.4"
+rotation="0 0 0"
+radius-bottom="0.6"
+height="2"
+>
+</a-cone>
+<a-cone
+color="yellow"
+position="-5.4 0.75 -3.1"
+rotation="0 0 0"
+radius-bottom="0.45"
+height="1.5"
+>
+</a-cone>
+<a-cylinder
+color="sienna"
+position="-6.8 9.3 -7.5"
+rotation="0 0 0"
+radius="0.4"
+height="1"
+>
+</a-cylinder>
+<a-sphere
+color="LightCyan"
+position="-3.5 4.8 -6"
+radius="1.2"
+>
+</a-sphere>
+<a-sphere
+color="LightCyan"
+position="-6.4 4.8 -6"
+radius="1.2"
+>
+</a-sphere>
+<a-box
+color="sienna"
+position="-5 2.2 -5.8"
+rotation="0 0 0"
+width="2"
+height="2.5"
+depth="2"
+>
+</a-box>
+
                 <a-assets>
                     <a-asset-item
 id="chair"
@@ -35,6 +156,16 @@ id="fire"src="assets\fire.glb"
 id="firetruck"src="assets\firetruck.glb"
 >
 </a-asset-item>
+<a-asset-item
+id="workerf"
+src="assets\workerf.glb"
+>
+</a-asset-item>
+<a-asset-item
+id="workerm"
+src="assets\workerm.glb"
+>
+</a-asset-item>
 
     <img
     id="grass-base" 
@@ -47,6 +178,30 @@ id="firetruck"src="assets\firetruck.glb"
      <img 
      id="grass-normal" 
      src="assets\Grass_001_NORM.jpg"
+     >
+     <img
+    id="wall" 
+    src="assets\Wall_COLOR.png"
+    >
+    <img 
+    id="wall-ambient-occlusion"
+     src="assets\Wall_OCC.png"
+     >
+     <img 
+     id="wall-normal" 
+     src="assets\Wall_NORM.png"
+     >
+     <img
+    id="tiles" 
+    src="assets\tiles_COLOR.jpg"
+    >
+    <img 
+    id="tiles-ambient-occlusion"
+     src="assets\tiles_OCC.jpg"
+     >
+     <img 
+     id="tiles-normal" 
+     src="assets\tiles_NORM.jpg"
      >
 </a-assets>
                 <a-plane 
@@ -96,11 +251,27 @@ scale="40 40 40"
 </a-entity>
 <a-entity
 gltf-model="#firetruck"
-position="-5 3 10"
+position="-13 2 5"
 rotation="0 0 0"
 scale="7 7 7"
 >
 </a-entity>
+
+<a-entity
+gltf-model="#workerm"
+position="-12 0 7"
+rotation="0 60 0"
+scale="2 2 2"
+>
+</a-entity>
+<a-entity
+gltf-model="#workerf"
+position="-15 0 7"
+rotation="0 60 0"
+scale="2 2 2"
+>
+</a-entity>
+
              </a-scene>
             </body>
             </html>
